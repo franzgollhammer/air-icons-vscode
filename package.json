@@ -1,0 +1,32 @@
+{
+  "name": "air-file-icons",
+  "displayName": "Air File Icons",
+  "description": "JetBrains Air-inspired file icon theme for VS Code",
+  "version": "0.1.0",
+  "publisher": "fg",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "air-file-icons",
+        "label": "Air File Icons",
+        "path": "./air-icon-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "link": "ln -sf ~/dev/air-icons-vscode ~/.vscode/extensions/air-file-icons && echo 'Symlinked to ~/.vscode/extensions/air-file-icons'",
+    "link:insiders": "ln -sf ~/dev/air-icons-vscode ~/.vscode-insiders/extensions/air-file-icons && echo 'Symlinked to ~/.vscode-insiders/extensions/air-file-icons'",
+    "link:sessions": "ln -sf ~/dev/air-icons-vscode ~/.vscode-sessions-insiders/extensions/air-file-icons && echo 'Symlinked to ~/.vscode-sessions-insiders/extensions/air-file-icons'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fg/air-icons-vscode"
+  }
+}
