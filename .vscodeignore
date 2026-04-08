@@ -1,0 +1,6 @@
+.git/**
+.github/**
+.claude/**
+.vscode/**
+air-icons-vscode
+.gitignore

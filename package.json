@@ -17,6 +17,11 @@
         "id": "air-file-icons",
         "label": "Air File Icons",
         "path": "./air-icon-theme.json"
+      },
+      {
+        "id": "air-file-icons-folders",
+        "label": "Air File Icons (Folders)",
+        "path": "./air-icon-theme-folders.json"
       }
     ]
   },

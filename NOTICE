@@ -1,0 +1,11 @@
+Air File Icons for Visual Studio Code
+
+This extension contains icons derived from the JetBrains intellij-community project.
+
+Original source: https://github.com/JetBrains/intellij-community
+Path: platform/icons/src/expui/fileTypes/
+
+Copyright 2000-2024 JetBrains s.r.o. and contributors.
+Licensed under the Apache License, Version 2.0.
+
+Icons may have been modified from their original form for use in VS Code.

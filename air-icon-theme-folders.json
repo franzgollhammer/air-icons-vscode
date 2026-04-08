@@ -237,6 +237,8 @@
   },
 
   "file": "_file",
+  "folder": "_folder",
+  "folderExpanded": "_folder_open",
 
   "fileExtensions": {
     "amper": "_amper",
@@ -607,6 +609,8 @@
 
   "light": {
     "file": "_file_light",
+    "folder": "_folder_light",
+    "folderExpanded": "_folder_open_light",
     "fileExtensions": {
       "amper": "_amper_light",
       "asm": "_asm_light",
