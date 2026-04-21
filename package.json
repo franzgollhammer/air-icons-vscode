@@ -17,18 +17,17 @@
         "id": "air-file-icons",
         "label": "Air File Icons",
         "path": "./air-icon-theme.json"
-      },
-      {
-        "id": "air-file-icons-folders",
-        "label": "Air File Icons (Folders)",
-        "path": "./air-icon-theme-folders.json"
       }
-    ]
+    ],
+    "configurationDefaults": {
+      "workbench.tree.indent": 20
+    }
   },
   "scripts": {
-    "link": "ln -sf ~/dev/air-icons-vscode ~/.vscode/extensions/air-file-icons && echo 'Symlinked to ~/.vscode/extensions/air-file-icons'",
-    "link:insiders": "ln -sf ~/dev/air-icons-vscode ~/.vscode-insiders/extensions/air-file-icons && echo 'Symlinked to ~/.vscode-insiders/extensions/air-file-icons'",
-    "link:sessions": "ln -sf ~/dev/air-icons-vscode ~/.vscode-sessions-insiders/extensions/air-file-icons && echo 'Symlinked to ~/.vscode-sessions-insiders/extensions/air-file-icons'"
+    "dev": "code --extensionDevelopmentPath=$PWD",
+    "dev:insiders": "code-insiders --extensionDevelopmentPath=$PWD",
+    "package": "npx @vscode/vsce package",
+    "install:local": "npx @vscode/vsce package && code --install-extension $(ls -t *.vsix | head -1) --force"
   },
   "repository": {
     "type": "git",
