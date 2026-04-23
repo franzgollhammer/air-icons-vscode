@@ -1,16 +1,35 @@
 {
   "name": "air-file-icons",
   "displayName": "Air File Icons",
-  "description": "JetBrains Air-inspired file icon theme for VS Code",
+  "description": "JetBrains Air-inspired file icon theme for VS Code and Cursor.",
   "version": "0.1.0",
-  "publisher": "fg",
-  "license": "SEE LICENSE IN LICENSE",
+  "publisher": "franzgollhammer",
+  "author": {
+    "name": "Franz Gollhammer"
+  },
+  "license": "Apache-2.0",
   "engines": {
     "vscode": "^1.74.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "icons",
+    "icon-theme",
+    "file-icons",
+    "jetbrains",
+    "air",
+    "minimal",
+    "theme",
+    "cursor"
+  ],
+  "galleryBanner": {
+    "color": "#2B2D30",
+    "theme": "dark"
+  },
+  "qna": "marketplace",
+  "pricing": "Free",
   "contributes": {
     "iconThemes": [
       {
@@ -26,11 +45,22 @@
   "scripts": {
     "dev": "code --extensionDevelopmentPath=$PWD",
     "dev:insiders": "code-insiders --extensionDevelopmentPath=$PWD",
-    "package": "npx @vscode/vsce package",
-    "install:local": "npx @vscode/vsce package && code --install-extension $(ls -t *.vsix | head -1) --force"
+    "package": "bash scripts/package.sh",
+    "package:list": "npx @vscode/vsce ls",
+    "publish": "bash scripts/publish-all.sh",
+    "publish:vscode": "bash scripts/publish-vscode.sh",
+    "publish:openvsx": "bash scripts/publish-openvsx.sh",
+    "release": "bash scripts/release.sh",
+    "install:local": "bash scripts/install-local.sh",
+    "verify": "bash scripts/verify.sh"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fg/air-icons-vscode"
-  }
+    "url": "https://github.com/franzgollhammer/air-icons-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/franzgollhammer/air-icons-vscode/issues"
+  },
+  "homepage": "https://github.com/franzgollhammer/air-icons-vscode#readme",
+  "icon": "air-icons.png"
 }
