@@ -2,7 +2,7 @@
 
 A clean, minimal file icon theme for Visual Studio Code and Cursor, inspired by the JetBrains New UI (Air) icon set.
 
-![Air File Icons preview](air-icons.png)
+![Air File Icons preview](preview-icons.png)
 
 > **Pairs with [Air](https://github.com/franzgollhammer/air-theme-vscode)** — companion color theme (dark + light) ported from JetBrains Air. Designed to look right next to these icons.
 
