@@ -5,6 +5,10 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); this pr
 
 ## [Unreleased]
 
+### Added
+- Air Material Icons theme mirrored from the Air Icons Zed extension
+- 1245 colorful Material icons with filename, extension, and named-folder mappings
+
 ## [0.1.1] - 2026-04-28
 
 ### Changed

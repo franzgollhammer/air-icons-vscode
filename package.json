@@ -1,7 +1,7 @@
 {
   "name": "air-file-icons",
   "displayName": "Air File Icons",
-  "description": "JetBrains Air-inspired file icon theme for VS Code and Cursor.",
+  "description": "Air-inspired file icon themes for VS Code and Cursor, including an expansive Material set.",
   "version": "0.1.1",
   "publisher": "franzgollhammer",
   "author": {
@@ -36,6 +36,11 @@
         "id": "air-file-icons",
         "label": "Air File Icons",
         "path": "./air-icon-theme.json"
+      },
+      {
+        "id": "air-material-icons",
+        "label": "Air Material Icons",
+        "path": "./air-material-icon-theme.json"
       }
     ],
     "configurationDefaults": {
@@ -52,6 +57,7 @@
     "publish:openvsx": "bash scripts/publish-openvsx.sh",
     "release": "bash scripts/release.sh",
     "install:local": "bash scripts/install-local.sh",
+    "sync:zed": "python3 scripts/sync_from_zed.py",
     "verify": "bash scripts/verify.sh"
   },
   "repository": {
