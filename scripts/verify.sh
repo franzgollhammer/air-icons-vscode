@@ -25,6 +25,7 @@ CONTENTS="$(unzip -Z1 "$VSIX")"
 EXPECTED=(
   "extension/package.json"
   "extension/air-icon-theme.json"
+  "extension/air-material-icon-theme.json"
   "extension/air-icons.png"
   "extension/README.md"
   "extension/LICENSE.txt"
@@ -36,7 +37,7 @@ normalize() { echo "$1" | tr '[:upper:]' '[:lower:]'; }
 NORMALIZED="$(echo "$CONTENTS" | tr '[:upper:]' '[:lower:]')"
 
 for f in "${EXPECTED[@]}"; do
-  if echo "$NORMALIZED" | grep -q "$(normalize "$f")"; then
+  if grep -Fq -- "$(normalize "$f")" <<< "$NORMALIZED"; then
     ok "contains $f"
   else
     warn "missing $f"
@@ -53,11 +54,13 @@ BLOCKED=(
 )
 
 for f in "${BLOCKED[@]}"; do
-  if echo "$NORMALIZED" | grep -q "$(normalize "$f")"; then
+  if grep -Fq -- "$(normalize "$f")" <<< "$NORMALIZED"; then
     fail "vsix contains forbidden path: $f"
   fi
 done
 
 ICON_COUNT=$(echo "$CONTENTS" | grep -c '^extension/icons/dark/' || true)
 ok "icon assets: $ICON_COUNT dark variants"
+MATERIAL_ICON_COUNT=$(echo "$CONTENTS" | grep -c '^extension/icons/air-material/dark/' || true)
+ok "material icon assets: $MATERIAL_ICON_COUNT dark variants"
 ok "total files: $(echo "$CONTENTS" | wc -l | tr -d ' ')"

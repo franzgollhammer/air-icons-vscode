@@ -9,3 +9,12 @@ Copyright 2000-2024 JetBrains s.r.o. and contributors.
 Licensed under the Apache License, Version 2.0.
 
 Icons may have been modified from their original form for use in VS Code.
+
+Air Material Icons
+
+This extension also contains icons from Material Icon Theme.
+
+Original source: https://github.com/material-extensions/vscode-material-icon-theme
+Licensed under the MIT License.
+
+See icons/air-material/LICENSE.md for the full license text.
