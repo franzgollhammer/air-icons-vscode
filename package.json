@@ -2,7 +2,7 @@
   "name": "air-file-icons",
   "displayName": "Air File Icons",
   "description": "Air-inspired file icon themes for VS Code and Cursor, including an expansive Material set.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "publisher": "franzgollhammer",
   "author": {
     "name": "Franz Gollhammer"
