@@ -26,6 +26,7 @@ EXPECTED=(
   "extension/package.json"
   "extension/air-icon-theme.json"
   "extension/air-material-icon-theme.json"
+  "extension/air-material-combined-icon-theme.json"
   "extension/air-icons.png"
   "extension/README.md"
   "extension/LICENSE.txt"
