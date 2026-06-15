@@ -5,6 +5,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); this pr
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-06-15
+
+### Added
+- **Air + Material Icons** hybrid theme: prefers Air icons and fills every gap with Material icons (including Material's named-folder set)
+- `scripts/build_combined_theme.py` generator (`npm run build:combined`) that deterministically merges the two source themes
+
 ## [0.2.0] - 2026-06-11
 
 ### Added

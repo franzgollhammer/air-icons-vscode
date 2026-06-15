@@ -1,6 +1,6 @@
 # Air File Icons
 
-Air-inspired file icon themes for Visual Studio Code and Cursor. Ships with the minimal **Air File Icons** theme and the expansive **Air Material Icons** theme.
+Air-inspired file icon themes for Visual Studio Code and Cursor. Ships with the minimal **Air File Icons** theme, the expansive **Air Material Icons** theme, and the **Air + Material Icons** hybrid that prefers Air icons and fills the gaps with Material.
 
 ![Air File Icons preview](preview-icons.png)
 
@@ -11,7 +11,8 @@ Air-inspired file icon themes for Visual Studio Code and Cursor. Ships with the 
 
 - **Air File Icons** — 112 monochrome-accent file icons, tuned for compact tree UIs
 - **Air Material Icons** — 1245 colorful icons covering 1368 file extensions, 2124 filenames, and 4648 named folders
-- Dark + light variants for both themes
+- **Air + Material Icons** — hybrid set: Air icons take priority, Material icons fill every gap (plus Material's named folders)
+- Dark + light variants for all themes
 
 ## Install
 
@@ -20,7 +21,7 @@ Air-inspired file icon themes for Visual Studio Code and Cursor. Ships with the 
 1. Extensions panel (`Cmd+Shift+X` / `Ctrl+Shift+X`)
 2. Search `Air File Icons`
 3. Install
-4. `Cmd+Shift+P` / `Ctrl+Shift+P` → `Preferences: File Icon Theme` → pick `Air File Icons` or `Air Material Icons`
+4. `Cmd+Shift+P` / `Ctrl+Shift+P` → `Preferences: File Icon Theme` → pick `Air File Icons`, `Air Material Icons`, or `Air + Material Icons`
 
 ### Cursor
 
@@ -48,6 +49,7 @@ Configs: Docker, Git, Webpack, Vite, Rollup, ESLint, Prettier, Babel, TSConfig, 
 npm run dev           # launch VS Code with the extension loaded
 npm run dev:insiders  # VS Code Insiders
 npm run sync:zed      # sync Air Material Icons from ../air-icons-zed
+npm run build:combined # regenerate the Air + Material hybrid theme
 npm run package       # build .vsix
 npm run install:local # package + install into VS Code
 ```
