@@ -5,6 +5,12 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); this pr
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-07-23
+
+### Changed
+- **Air File Icons** now uses the same console icon for the shell family, so all three themes share one shell icon
+- Retired the `_shell` → `_material_console_*` mapping override added in 0.4.0 — the combined theme generator is back to the plain "Air wins, Material fills the gaps" rule now that both source icons are identical
+
 ## [0.4.0] - 2026-07-23
 
 ### Changed
