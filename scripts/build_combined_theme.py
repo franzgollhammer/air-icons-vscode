@@ -21,15 +21,6 @@ AIR_PATH = os.path.join(ROOT, "air-icon-theme.json")
 MATERIAL_PATH = os.path.join(ROOT, "air-material-icon-theme.json")
 OUT_PATH = os.path.join(ROOT, "air-material-combined-icon-theme.json")
 
-# Exception to "Air wins": the shell family. Material's console icon covers the
-# whole family (sh, bash, zsh, rc files, hooks, ...), so letting Air's generic
-# shell icon win for a handful of extensions would split one file type across
-# two visual languages. Map Air's shell definitions onto Material's console.
-DEFINITION_OVERRIDES = {
-    "_shell": "_material_console_dark",
-    "_shell_light": "_material_console_light",
-}
-
 
 def load(path):
     with open(path, encoding="utf-8") as fh:
@@ -40,9 +31,7 @@ def air_preferred(material_map, air_map):
     """Merge two association maps so Air wins and Material fills the gaps."""
     merged = dict(material_map or {})
     merged.update(air_map or {})
-    return {
-        key: DEFINITION_OVERRIDES.get(value, value) for key, value in merged.items()
-    }
+    return merged
 
 
 def build(air, material):
