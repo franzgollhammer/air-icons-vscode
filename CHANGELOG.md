@@ -5,6 +5,13 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); this pr
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-07-23
+
+### Changed
+- New console icon (green hexagon) for the shell family in **Air Material Icons** and **Air + Material Icons** — `sh`, `bash`, `zsh`, `fish`, `ksh`, `csh`, rc/profile files, and git hooks
+- **Air + Material Icons** now prefers Material's console icon over Air's generic shell icon so the whole shell family renders consistently
+- **Air File Icons** is unchanged and keeps its own shell icon
+
 ## [0.3.0] - 2026-06-15
 
 ### Added
